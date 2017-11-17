@@ -11,8 +11,11 @@ def draw_line(tick_len,tick_label = ''):
 def draw_intervel(center_len):
 
 	if center_len>0:
+#To recurively print the ticks above the center		
 		draw_intervel(center_len-1)
+#Printing the ticks		
 		draw_line(center_len)
+#To recurively print the ticks below the center		
 		draw_intervel(center_len-1)
 
 def draw_ruler(num_inch,major_len):
@@ -23,7 +26,7 @@ def draw_ruler(num_inch,major_len):
 
 if __name__ =='__main__':
 	#print("Printing the scale upto 1 inch")
-	draw_ruler(5,1)
+	draw_ruler(1,5)
 
 
 
