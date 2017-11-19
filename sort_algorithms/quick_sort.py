@@ -1,5 +1,7 @@
 #quick_sort.py
 
+
+#Non Permutative way
 def quick_sort(A):
 	quick_sort2(A,0,len(A)-1)
 	
