@@ -28,5 +28,5 @@ def fib(n):
 	fib_cac[n] = value
 	return value
 
-for n in range(1,101):
-	print fib(n)
+#for n in range(1,101):
+print fib(10)
