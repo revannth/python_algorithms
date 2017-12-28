@@ -2,6 +2,7 @@
 
 
 #Uses the logic that x^n of a number is nothing but x*(x^(n//2))^2 for odd and (x^(n//2))^2 for even
+#O(n) time complexity
 
 
 def altpow(x,n):
