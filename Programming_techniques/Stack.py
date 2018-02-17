@@ -1,6 +1,6 @@
 #Stack.py
 
-class Stack:
+class ArrayStack:
 
 	def __init__(self):
 		self.stack = []
@@ -25,6 +25,8 @@ class Stack:
 	def __len__(self):
 
 		return len(self.stack)
+
+
 
 
 
