@@ -1,4 +1,4 @@
-#queue.py
+#Arraybasedqueue.py
 
 class ArrayQueue:
 
@@ -56,3 +56,17 @@ class ArrayQueue:
 
 
 
+
+
+# Operation
+# Running Time
+# Q.enqueue(e)
+# O(1)∗
+# Q.dequeue( )
+# O(1)∗
+# Q.first( )
+# O(1)
+# Q.is empty()
+# O(1)
+# len(Q)
+# O(1)
