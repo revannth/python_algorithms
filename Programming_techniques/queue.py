@@ -39,8 +39,20 @@ class ArrayQueue:
 		if self._size==len(self._data):
 			self._resize = (2*self._data)
 		avail = (self._front + self._size)%len(self._data)
-		self._data(avail) = p
+		self._data[avail] = p
 		self._size+=1
 	def resize(self,ope):
-		
+
+		old = self._data
+		self._data = [None]*ope
+
+		walk = self._front
+
+		for k in range(len(self._data)):
+			self._data[k] = old[walk]
+			walk = (walk+1)%len(old)
+
+		self._front = 0
+
+
 
