@@ -17,13 +17,16 @@ class Linkedlist:
 		new_node = Node(data)
 		if self.head!=None:
 			new_node.set_next(self.head)
+		else if self.head==None:
+			self.tail=new_node
 		self.head=new_node
+		
 
-	# def insert_behind(self,data):
-	# 	new_node = Node(data)
-	# 	if self.tail!=None:
-	# 		self.tail.set_next(new_node)
-	# 	self.tail = new_node
+	def insert_behind(self,data):
+		new_node = Node(data)
+		if self.tail!=None:
+			self.tail.set_next(new_node)
+		self.tail = new_node
 
 
 	def __str__(self):
@@ -46,7 +49,7 @@ if __name__ == '__main__':
 	l = Linkedlist()
 	l.insert_front('5')
 	l.insert_front('10')
-	# l.insert_behind('20')
+	l.insert_behind('20')
 	l.insert_front('3000')
 	print l
 	
