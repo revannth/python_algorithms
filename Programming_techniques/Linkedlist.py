@@ -17,7 +17,7 @@ class Linkedlist:
 		new_node = Node(data)
 		if self.head!=None:
 			new_node.set_next(self.head)
-		else if self.head==None:
+		elif self.head==None:
 			self.tail=new_node
 		self.head=new_node
 		
